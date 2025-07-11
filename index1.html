@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Juros Abusivos</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f2f2f2; padding: 20px; }
+        .container { max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; }
+        input, button { width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; }
+        button { background-color: #28a745; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #218838; }
+        .resultado { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Simulador de Juros Abusivos</h2>
+        <input type="number" id="valorTotal" placeholder="Valor total financiado (R$)">
+        <input type="number" id="parcelas" placeholder="Número de parcelas">
+        <input type="number" id="valorParcela" placeholder="Valor de cada parcela (R$)">
+        <button onclick="calcular()">Analisar</button>
+        <div class="resultado" id="resultado"></div>
+        <a id="linkWhatsApp" style="display:none; margin-top:15px; text-align:center;" target="_blank">📲 Enviar pelo WhatsApp</a>
+    </div>
+
+    <script src="simulador.js"></script>
+</body>
+</html>
